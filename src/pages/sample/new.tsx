@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Usecase } from '../../usecases/sample.usecase'
+import { Usecase } from '../../../usecases/sample.usecase'
 
 const New: NextPage = () => {
   const usecase = new Usecase()
