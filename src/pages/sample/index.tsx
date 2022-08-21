@@ -13,11 +13,15 @@ const Sample: NextPage = () => {
   const [count, setCount] = useState(10)
   const [isEmpty, setIsEmpty] = useState(false)
 
-  useEffect(() => {console.log('useEffectなり')}, [isEmpty])
+  useEffect(() => { console.log('useEffectなり') }, [isEmpty])
   return (
     <div>
+      <ul>
+        <li>リストタグ１</li>
+        <li>リストタグ２</li>
+      </ul>
       {
-        isEmpty ? <div>おしまい！</div> : <div>カウント：{ count }</div>
+        isEmpty ? <div>おしまい！</div> : <div>カウント：{count}</div>
       }
       <button
         onClick={onClick}
